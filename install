@@ -175,6 +175,7 @@ then
 	apt install bind9
 	mv /etc/bind/named.conf.options /etc/bind/named.conf.options.old
 	cp ./config-files/named.conf.options /etc/bind/named.conf.options
+	cp ./config-files/bind9 /etc/default/bind9
 
 	echo "Initialising Bind9 DNS"
 	service bind9 restart
