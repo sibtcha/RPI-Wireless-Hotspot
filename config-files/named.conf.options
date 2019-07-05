@@ -1,0 +1,21 @@
+acl "localnetwork" {
+        127.0.0.1/32;
+        192.168.42.0/24;
+};
+
+options {
+        directory "/var/cache/bind";
+
+        forwarders {
+                208.67.222.222; # resolver1.opendns.com
+		208.67.220.220; # resolver2.opendns.com
+		1.1.1.1; # Cloudflare
+         };
+
+        allow-query { localnetwork; };
+       
+        dnssec-validation auto;
+
+        auth-nxdomain no;  
+        listen-on-v6 { any; };
+};

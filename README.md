@@ -23,6 +23,8 @@ Features:
 
 * Allows chromecast compatibility with unblock-us by intercepting google's DNS requests on the pi
 
+* Install bind9 for DNS management
+
 Requirements:
 -------------
 
