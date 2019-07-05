@@ -4,5 +4,5 @@
 RESOLVCONF=no
 
 # startup option for the server
-OPTIONS="-u bind"  # backup default value
+#OPTIONS="-u bind"  # backup default value
 OPTIONS="-4" # Configure bind9 to use only IPv4
