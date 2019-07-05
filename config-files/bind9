@@ -1,8 +1,7 @@
 # /etc/default/bind9
 
 # run resolvconf?
-RESOLVCONF=no
+RESOLVCONF=yes
 
 # startup option for the server
-#OPTIONS="-u bind"  # backup default value
-OPTIONS="-4" # Configure bind9 to use only IPv4
+OPTIONS="-4 -u bind"
