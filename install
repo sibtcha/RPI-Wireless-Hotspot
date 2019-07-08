@@ -106,7 +106,7 @@ then
 	fi
 
 	echo "Configuring hostapd"
-	read -r -p "Do you want to ues the default wifi password of 01234567890 and ssid of RaspberryPiFi? [y/N] " althostapdresponse
+	read -r -p "Do you want to ues the default wifi password of 01234567890A and ssid of RaspberryPiFi? [y/N] " althostapdresponse
 
 	if [[ $althostapdresponse =~ ^([yY][eE][sS]|[yY])$ ]]
 	then
@@ -172,7 +172,7 @@ then
 	update-rc.d udhcpd enable
 
 	echo "Installing Bind9 DNS"
-	apt install bind9
+	apt install bind9 -y
 	mv /etc/bind/named.conf.options /etc/bind/named.conf.options.old
 	cp ./config-files/named.conf.options /etc/bind/named.conf.options
 	cp ./config-files/bind9 /etc/default/bind9
