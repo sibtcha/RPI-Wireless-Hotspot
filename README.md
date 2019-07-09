@@ -39,7 +39,7 @@ Installation:
 -------------
 
 * In the terminal, run:
-    git clone https://github.com/unixabg/RPI-Wireless-Hotspot.git
+    git clone https://github.com/sibtcha/RPI-Wireless-Hotspot.git
 
 * Navigate to folder, and execute "sudo ./install"
 
